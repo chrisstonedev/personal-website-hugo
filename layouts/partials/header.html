@@ -2,4 +2,9 @@
 <a href="{{.Site.Home.RelPermalink}}">
 {{.Site.Title}}
 </a>
+<ul>
+{{ range .Site.Home.Pages.ByParam "nav_order" }}
+<li><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
 </header>

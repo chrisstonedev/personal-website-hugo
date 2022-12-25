@@ -48,3 +48,12 @@ footer a {
 a {
     color: green;
 }
+
+header {
+    display: flex;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+}
